@@ -1,0 +1,74 @@
+.login{
+		width			: 300px;
+		bottom			: 5;
+		height			: 350px;
+		margin			: 90px auto;
+		border-bottom-left-radius: 30px; 
+		border-top-right-radius: 30px; 
+		border			: 5px solid black; 
+		background-color: maroon;
+		background		: background/darkness.png;
+		position		: relative;
+}
+.img{
+		top				: -50;
+		left			: -60;
+		position		: relative;
+		width			: 200px;
+		height			: 65px;	
+}
+.isi{
+		top				: -420;
+		left			: -35;
+		width			: 150px;
+		height			: 25px;
+		margin			: 50px auto;
+		color			: white;
+		background-color: none;
+		position		: relative;
+}
+.isi1{
+		top				: -425;
+		left			: 610;
+		width			: 150px;
+		height			: 25px;
+		font-family		: thomas neo roman;
+		font-size		: 50px;
+		font-style		: italic;
+		color			: white;
+		background-color: none;
+		position		: relative;
+		transition		: 5s ;
+}
+.isi2{
+		top				: -9;
+		left			: 5;
+		width			: 150px;
+		height			: 25px;
+		font-family		: thomas neo roman;
+		font-size		: 15px;
+		color			: white;
+		position		: relative;
+}
+.isi2 a{
+		color			: black;
+}
+.isi2 a:hover{
+		color			: white;
+		transition		: 2s, inline;
+}
+.button{
+		top				: -193;
+		left			: 310;
+		position		: relative;
+		width			: 100px;
+		height			: 30px;	
+		border-radius	: 30px;	
+}
+.kosong{
+		top				: 0;
+		left			: 0;
+		position		: relative;
+		width			: 100px;
+		height			: 90px;	
+}

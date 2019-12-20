@@ -1,0 +1,152 @@
+<html>
+<head>
+	<script type="text/javascript" language="javascript">
+		var txt="Dragon Ball >>";
+		var speed=300;
+		var refresh=null;
+		function action() {document.title=txt;
+			txt=txt.substring(1,txt.length)+txt.charAt(0);
+			refresh=setTimeout("action()",speed);}action();
+	</script><link rel='icon' href='background/naga.png'>
+	<link rel="stylesheet" type="text/css"
+	media="all" href="style.css">
+</head>
+<body background="background/darkness.png">
+<div id="top-bar">
+<img src="background/Dragon-Ball.png" class="img">
+<img src="background/bismillah.png" class="img1">
+	<p><form align="right" class="search">
+  <input class="search" type="text" placeholder="Cari..." required >	
+   <a href ="javascript: alert('Tidak dapat mencari karena website ini ofline');">
+   <input class="button" type="button" value="Cari" >	  
+</form></a></p>
+</div>
+	<div id="layout">
+		<div id="header">
+		<img src="background/G1.jpg" class="header">
+		</div>
+		<div id="menu">
+			<ul>	
+				<li><a href="TB.html"> Beranda</a></li> 
+				<li><a href="ARTIKEL.html">Artikel</a></li>	
+				<li><a href="Akira Toriyama.html">Akira Toriyama</a></li> 
+				<li><a href="MUSIK.html">Musik</a></li> 
+				<li><a href="BIODATA.html">Biodata</a></li> 
+				<li><a href="KOLOM.html">Kontak Kami</a></li> 
+				<li><a></a></li> 
+				<li><a></a></li> 
+				<li><a></a></li> 
+				<li> <a href ="javascript:alert ('Artikel Goku'); ">
+				<img src="background/email.png" class="pesan"> </a></li>
+			</ul>
+		</div>			
+		<div id="runningtext">
+		<marquee behavior="alternate" scrollamount="10" onmouseover="this.stop();" onmouseout="this.start();"direction="left">
+			Selamat Datang di Website Saya
+		</marquee>
+		</div>
+<div id="kontak">
+<div class="kontak">
+<h2>Kontak Kami</h2><br>
+<form>
+<dd> 
+<body>
+ <table class="table">
+ <form id = "myform"onsubmit ="return validasi()">
+    <tr class="kontak">
+					<td>Nama </td>
+					<td colspan="3"><input type="text" name="nama" id="nama" size="50"></td>
+					<tr>
+					<td>Nim  </td>
+					<td colspan="3"><input type="text" name="nim" id="nim" size="50"></td>
+				</tr>
+
+				<tr>
+					<td>Email  </td>
+					<td colspan="3"><input type="email" name="email" id="email" size="50"></td>
+				</tr>
+
+				<tr>
+					<td>Password  </td>
+					<td colspan="3"><input type="password" name="password" id="password" size="50"></td>
+				</tr>
+
+				<tr>
+					<td>Jenis Kelamin  </td>
+					<td><select name="select">
+						<option value="1" selected="selected">Laki-laki</option>
+						<option value="2">Perempuan</option>
+					</select></td>
+				</tr>
+				<td>Komentar </td>
+					<td colspan="3"> <TEXTAREA NAME="komentar" rows="5" cols="50"></TEXTAREA></td>
+				</tr>
+				<tr>
+				<td><input type="submit" value="kirim komentar" onclick="validasi()"></td>
+				</tr>
+
+		</form>
+	</table>
+</div>
+</div>
+<div id="footer"> &copy; copyright ASRIADI 216280028</div>
+</body>	
+<script type="text/javascript">
+function validasi()
+{
+
+        var nama=document.forms["myform"]["nama"].value;
+
+
+        if (nama==null || nama=="")
+          {
+          alert("Nama harap diisi !");
+          return false;
+          };
+		  var nim=document.forms["myform"]["nim"].value;
+		  var numbers=/^[0-9]+$/;
+
+		  if (nim==null || nim=="")
+          {
+          alert("Nim harap diisi !");
+          return false;
+          };
+
+		  if (!nim.match(numbers))
+          {
+          alert("NIM harus angka !");
+          return false;
+          };
+
+//        validasi nip harus 9 digit pakai length javascript
+        if (nim.length!=9)
+          {
+          alert("NIM harus 9 digit");
+          return false;
+          };
+
+ var email=document.forms["myform"]["email"].value;
+ if (email==null || email=="")
+          {
+          alert("Email harap diisi !");
+          return false;
+          };
+
+		   var pasword=document.forms["myform"]["pasword"].value;
+ if (pasword==null || pasword=="")
+          {
+          alert("password harap diisi !");
+          return false;
+          };
+		  }
+
+		  function tombol()
+		{
+		alert("Komentar anda Terkirim");
+
+		}
+</script>
+</body>
+</table>
+</html>	
+	
